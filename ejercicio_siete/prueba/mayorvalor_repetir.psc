@@ -4,12 +4,12 @@ Proceso mayorvalor
 		Leer mayor;
 		cont=1;
 		Repetir
-			cont=cont+1;
-			Escribir 'Ingrese el valor ',cont;
+			Escribir 'Ingrese el valor ',cont+1;
 			Leer val;
 			Si val>mayor Entonces
 				mayor <- val;
 			FinSi
+			cont=cont+1;
 		Mientras Que cont<>5
-		Escribir "El mayor es ",mayor;
+Escribir "El mayor es ",mayor;
 FinProceso
