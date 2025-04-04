@@ -1,1 +1,34 @@
-
+Algoritmo MayorMenorPosicion
+    Definir valoruno, valordos, mayor, menor como real
+    Definir contmen, contmas, cont como entero
+    
+    Escribir "Ingrese el primer valor: "
+    Leer valoruno
+    
+    mayor = valoruno
+    menor = valoruno
+    contmas = 1
+    contmen = 1
+    
+    cont = 2
+    
+    Mientras cont <= 5 Hacer
+        Escribir "Ingrese el valor ", cont, ": "
+        Leer valordos
+        
+        Si valordos > mayor Entonces
+            mayor = valordos
+            contmas = cont
+        FinSi
+        
+        Si valordos < menor Entonces
+            menor = valordos
+            contmen = cont
+        FinSi
+        
+        cont = cont + 1
+    FinMientras
+    
+    Escribir "El mayor valor es: ", mayor, " ingresado en la posicion: ", contmas
+    Escribir "El menor valor es: ", menor, " ingresado en la posicion: ", contmen
+FinAlgoritmo
